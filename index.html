@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/addons/p5.sound.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+    <meta charset="utf-8" />
+    <title>Conway's Game of Life - By AxelioDev</title> 
+</head>
+<body>
+    <div class="background-container">
+        <div class="game-case">
+            <main>
+            </main>
+            
+            <div class="controls-container">
+                
+                <div class="controls-row-1">
+                    <button id="play-pause-button" title="Start/Pause Simulation">
+                        <i class="fas fa-play"></i> Play 
+                    </button>
+                    <button id="prev-button" title="Previous Generation">
+                        <i class="fas fa-undo"></i> Previous
+                    </button>
+                    <button id="next-button" title="Next Generation">
+                        <i class="fas fa-forward"></i> Next
+                    </button>
+                </div>
+
+                <div class="controls-row-2">
+                    <button id="multiplayer-button" title="Toggle between Solo (Black) and Multiplayer (Blue/Red)">
+                        Mode: Solo 
+                    </button>
+                    <button id="reset-example-button" title="Randomize Grid">
+                        <i class="fas fa-sync-alt"></i> Reset
+                    </button>
+                    <button id="clear-button" title="Clear Grid">
+                        <i class="fas fa-trash-alt"></i> Clear
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        
+        <footer id="description-footer">
+            <p>Conway's Game of Life - By AxelioDev</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

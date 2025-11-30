@@ -1,0 +1,142 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f4f8; 
+}
+
+.background-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px; 
+  background-image: url('./assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative; 
+}
+
+.game-case {
+  background: rgba(255, 255, 255, 0.2); 
+  border-radius: 15px;
+  backdrop-filter: blur(10px); 
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  padding: 20px; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 15px; 
+  width: 100%; 
+  max-width: 700px; 
+  min-width: unset; 
+  margin-top: auto; 
+}
+
+main {
+    flex-shrink: 0;
+}
+
+canvas {
+  max-width: 100%; 
+  height: auto !important; 
+  display: block;
+  border: 4px solid #333; 
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 0; 
+}
+
+.controls-container {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: flex-start; 
+  width: 100%;
+  gap: 10px;
+}
+
+.controls-row-1, .controls-row-2 {
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start; 
+  gap: 8px; 
+}
+
+button {
+  flex-grow: 0; 
+  width: 120px; 
+  padding: 8px 10px; 
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9em; 
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+  white-space: nowrap; 
+  text-align: left; 
+}
+
+#multiplayer-button, #reset-example-button {
+    width: 120px; 
+    font-size: 0.85em;
+}
+
+#description-footer {
+    width: 100%;
+    max-width: 700px; 
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    margin-bottom: auto; 
+}
+
+#description-footer p {
+    color: white;
+    font-style: italic;
+    font-size: 1em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
+    margin: 0;
+}
+
+@media (min-width: 600px) {
+    .game-case {
+        flex-direction: row; 
+        align-items: flex-start; 
+    }
+
+    .controls-container {
+        flex-grow: 1; 
+        flex-direction: column; 
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 15px;
+        min-width: 130px; 
+        margin-top: 0;
+    }
+    
+    .controls-row-1, .controls-row-2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    button {
+        width: 100%; 
+        padding: 10px 15px;
+        font-size: 0.95em;
+        text-align: center; 
+    }
+
+    #multiplayer-button, #reset-example-button {
+        width: 100%; 
+    }
+    
+    #description-footer {
+        max-width: 700px;
+    }
+}
