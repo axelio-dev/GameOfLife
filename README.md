@@ -14,11 +14,13 @@ To run this project, you simply need a web browser. The core logic is handled by
 
 ### Project Structure
 
+```
 ├── index.html # Main HTML file to load the simulation 
 ├── styles.css # Stylesheet for background and canvas 
 ├── script.js # p5.js logic for The Game of Life 
 └── assets/ 
     └── background.jpg # Custom background image
+```
 
 ### Installation
 
