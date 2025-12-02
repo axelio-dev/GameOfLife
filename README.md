@@ -13,11 +13,13 @@ The project uses the **p5.js** library to create a dynamic, browser-based simula
 To run this project, you simply need a web browser. The core logic is handled by p5.js and runs locally.
 
 ### Project Structure
-├── index.html # Main HTML file to load the simulation 
-├── styles.css # Stylesheet for background and canvas 
-├── script.js # p5.js logic for The Game of Life 
-└── assets/ 
-    └── background.jpg # Custom background image
+    ``bash
+    ├── index.html # Main HTML file to load the simulation 
+    ├── styles.css # Stylesheet for background and canvas 
+    ├── script.js # p5.js logic for The Game of Life 
+    └── assets/ 
+        └── background.jpg # Custom background image
+    ````
 
 ### Installation
 
@@ -52,10 +54,11 @@ The Game of Life takes place on an infinite two-dimensional grid of square cells
 
 ## Technologies Used
 
-| Domain | Technology | Notes |
-| Simulation | p5.js | A JavaScript library for creative coding and graphics. |
-| Frontend | HTML5 / CSS3 | Standard web technologies for structure and style. |
-| Media | `background.jpg` | Custom element for an aesthetic background (Royalty-free image). |
+|   Domain   |  Technology  |                                 Notes                                |
+|------------|--------------|----------------------------------------------------------------------|
+| Simulation | p5.js        | A JavaScript library for creative coding and graphics.               |
+| Frontend   | HTML5 / CSS3 | Standard web technologies for structure and style.                   |
+| Media      | Image .JPG   | Custom element for an aesthetic background (Royalty-free image).     |
 
 ---
 
