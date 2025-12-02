@@ -69,3 +69,4 @@ This project was developed during a **Coding Club** session at **Epitech**, Scho
 
 * **Developer:** Axelio-dev
 * **Institution:** Epitech Coding Club
+* **License:** This project is distributed under the **MIT License**.
